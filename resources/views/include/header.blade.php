@@ -5,9 +5,11 @@
         </div>
         <nav>
             <ul class="d-flex justify-content-around">
+                @foreach ($navLink as $link)
                 <li class="m-2">
-                    <a class="" class="fw-bolder" href="link.href">link</a>
+                    <a class="fw-bolder" href="{{ $link->href }}"> {{ $link->text }} </a>
                 </li>
+                @endforeach
             </ul>
         </nav>
     </div>

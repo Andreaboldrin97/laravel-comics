@@ -19,5 +19,6 @@ Route::get('/', function () {
     $shopLink = config('shopLink');
     $dcLink = config('dcLink');
     $siteLink = config('siteLink');
-    return view('comic', ['comics' => $data, 'dcComicLink' => $dcComicLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink]);
+    $navLink = config('navLink');
+    return view('comic', ['comics' => $data, 'dcComicLink' => $dcComicLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink, 'navLink' => $navLink]);
 });
