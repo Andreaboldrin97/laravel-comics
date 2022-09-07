@@ -15,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = config('comics');
-    return view('comic', ['comics' => $data]);
+    $dcComicLink = config('dcComicsLink');
+    $shopLink = config('shopLink');
+    $dcLink = config('dcLink');
+    $siteLink = config('siteLink');
+    return view('comic', ['comics' => $data, 'dcComicLink' => $dcComicLink, 'shopLink' => $shopLink, 'dcLink' => $dcLink, 'siteLink' => $siteLink]);
 });
