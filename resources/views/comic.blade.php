@@ -12,8 +12,12 @@
     </div>
     <div class="text-white px-5 py-5 container-fluid">
         <div class="px-5 row">
-
-
+            @foreach ($comics as $comic)
+            <div class="comic-container col-6 col-md-3 col-lg-2">
+                <img src="{{ $comic->image }}" alt="$comic->title">
+                <h6 class="pt-2">{{ $comic->title }}</h6>
+            </div>
+            @endforeach
         </div>
         <div class="text-white text-center  mt-3">
             <span class="btn-load-more px-5 py-2">LOAD MORE</span>
