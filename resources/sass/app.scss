@@ -54,3 +54,34 @@ main{
             }
     }
 }
+
+
+footer{
+    background-image:   url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    li{
+        list-style: none;
+        }
+    a{
+        text-decoration: none;
+    }
+    .logo-bg-breand{
+        background-image:   url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .footer-bottom{
+        height: 100px;
+        background-color: rgb(46, 46, 46);
+    }
+    .button-footer{
+        border: 2px solid $colorBreand ;
+    }
+    .follow a{
+        color: $colorBreand;
+    }
+}
+ 

@@ -13,7 +13,7 @@
     <!-- INCLUDO HEADER IN MODO CHE SIA LO STESSO IN OGNI PAGINA -->
     @include('include.header')
 
-    <div class="container">
+    <div>
         @yield('content')
     </div>
 
