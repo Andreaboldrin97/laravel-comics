@@ -1,0 +1,56 @@
+//
+//variables
+@import'partials/variables';
+
+//bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+header{
+    height: 100px;
+    background-color: white;
+
+    .logoBreand{
+        width: 70%;
+        min-width: 70px;
+        min-height: 70px;
+    }
+    nav{
+        li{
+            list-style: none;
+            a{
+                padding: 50px 0;
+                text-decoration: none;
+                color: $colorTextNav;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .active{
+        color: $colorBreand;
+        border-bottom: 5px solid $colorBreand ;
+    }
+}
+
+main{
+    .hero_series{
+        img{
+            object-fit: cover;
+            object-position: top;
+            height: 425px;
+            width: 100%;
+        }
+    }
+    .btn-load-more,
+    .btn-series{
+        background: $colorBreand;
+    }
+    .container-btn-series{
+        transform: translateY(50%);
+            a{
+            text-decoration: none;
+            }
+    }
+}
